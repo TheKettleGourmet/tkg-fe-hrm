@@ -1,0 +1,75 @@
+@use '../variables/colors.scss';
+
+.container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-center-col {
+  @extend .container-center;
+  flex-direction: column;
+}
+
+.container-center-full {
+  @extend .container-center;
+  height: 100%;
+  width: 100%;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-left-full {
+  @extend .container-left;
+  height: 100%;
+  width: 100%;
+}
+
+.container-spaced-out {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.container-spaced-out-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.alert {
+  padding-bottom: 1rem;
+  width: max-content;
+}
+
+.spin {
+  display: flex;
+  justify-content: center;
+}
+
+.status-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+// .status-dot-draft {
+//   @extend .status-dot;
+//   background-color: #717171;
+// }
+
+.status-dot-draft {
+  @extend .status-dot;
+  background-color: #f8a13e;
+}
+
+.status-dot-finished {
+  @extend .status-dot;
+  background-color: #75c081;
+}

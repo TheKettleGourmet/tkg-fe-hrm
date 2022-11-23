@@ -1,0 +1,85 @@
+.org-chart-space {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-top: 4rem !important;
+}
+
+.org-chart-heading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.org-chart-column-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.org-chart-layout-content {
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.org-chart-sider-divider {
+  height: 100vh !important;
+  border-width: 2px !important;
+}
+
+.org-chart-container {
+  width: 100%;
+  margin: 7% auto;
+}
+
+.node-container {
+  display: flex;
+  justify-content: center;
+}
+
+.node-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
+  width: 180px;
+}
+
+.node-avatar {
+  position: absolute !important;
+  z-index: 10;
+  top: -15px;
+  left: 10px;
+}
+
+.node-card-title {
+  font-weight: bold;
+}
+
+.node-card-text {
+  font-size: 10px;
+}
+
+.user-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-modal-horizontal-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-modal-horizontal-row-label {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+
+.reporting-employees-card .ant-card-body {
+  padding-bottom: 0;
+}

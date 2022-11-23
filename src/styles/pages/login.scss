@@ -1,0 +1,37 @@
+@use '../variables/colors.scss';
+@use '../variables/fonts.scss';
+@use '../common/common.scss';
+
+.login-content-light {
+  background-color: colors.$white;
+}
+
+.login-content-dark {
+  background-color: #303030;
+}
+
+.login-container {
+  @extend .container-center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-box {
+  @extend .container-center;
+  width: 30%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.login-title {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.login-alert {
+  padding-bottom: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+}
